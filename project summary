@@ -1,0 +1,45 @@
+Amazon Review Scraper and Sentiment Analysis (note: the site was scraped for reviews without an api)
+Project Overview
+This project is designed to scrape customer reviews from Amazon product pages, analyze sentiment, and visualize sentiment distribution using Python. It leverages web scraping, natural language processing (NLP), and data visualization techniques to understand customer opinions on products.
+
+Tech Stack & Libraries Used
+Python – Core programming language
+Requests – Fetching Amazon web pages
+BeautifulSoup – Extracting review data from HTML
+NLTK (VADER) – Sentiment analysis
+Deep Translator – Translating non-English reviews
+Pandas – Data manipulation
+Matplotlib & Seaborn – Data visualization
+Time & Regex – Handling request delays and text preprocessing
+
+Project Workflow:
+1️⃣ Web Scraping Amazon Reviews
+Fetches review pages using the Requests library.
+Parses HTML with BeautifulSoup to extract customer reviews.
+Implements pagination handling to scrape multiple pages.
+Includes headers to bypass bot detection and avoid blocking.
+2️⃣ Text Processing & Cleaning
+Converts review text to lowercase.
+Removes special characters and extra spaces using regular expressions.
+Uses Google Translator API to convert non-English reviews to English.
+3️⃣ Sentiment Analysis with NLTK
+Utilizes VADER SentimentIntensityAnalyzer to classify reviews as:
+Positive (Score > 0.05)
+Negative (Score < -0.05)
+Neutral (Between -0.05 and 0.05)
+4️⃣ Data Visualization
+Generates a bar chart to show sentiment distribution.
+Creates a histogram of sentiment scores to understand polarity. Sample Output & Insights
+✅ Successfully scraped customer reviews from Amazon.
+✅ Performed sentiment classification into Positive, Neutral, and Negative.
+✅ Identified trends such as common complaints or praises.
+✅ Provided graphical representation of review sentiments.
+
+🚀 Future Improvements
+🔹 Implement proxy rotation to avoid Amazon blocking.
+🔹 Use Scrapy or Selenium for more robust scraping.
+🔹 Enhance text processing by removing stopwords.
+🔹 Expand analysis with word clouds and keyword extraction.
+
+📌 Conclusion
+This project effectively automates the process of extracting and analyzing Amazon product reviews, providing businesses and consumers with data-driven insights into customer sentiment.
